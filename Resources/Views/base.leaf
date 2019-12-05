@@ -6,5 +6,6 @@
 </head>
 <body>
     #get(body)
+	<script src="/scripts/pivot.img.js"></script>
 </body>
 </html>

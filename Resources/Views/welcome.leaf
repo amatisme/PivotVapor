@@ -1,6 +1,9 @@
 #set("title") { It works }
 
 #set("body") {
+	<pivot-img>
+		<img src="/images/it-works.png">
+	</pivot-img>
 	<div class="welcome">
 		<img src="/images/it-works.png">
 	</div>
