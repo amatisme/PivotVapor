@@ -2,6 +2,7 @@ import Vapor
 
 /// Register your application's routes here.
 public func routes(_ router: Router) throws {
+
     // "It works" page
     router.get { req in
         return try req.view().render("welcome")
@@ -13,4 +14,7 @@ public func routes(_ router: Router) throws {
             "name": req.parameters.next(String.self)
         ])
     }
+
+    let helloController = HelloController()
+    router.get("greet", use: helloController.greet)
 }
